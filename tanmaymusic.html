@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Tanmay 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .img-container {
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 150, 255, 0.9);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    h2, h3 {
+      color: #ffccff;
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+      text-shadow: 0 0 8px white;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    .audio-button {
+      margin-top: 20px;
+      background-color: #ffccff;
+      color: black;
+      padding: 10px 20px;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
+
+    .audio-button:hover {
+      background-color: #ffdfff;
+    }
+  </style>
+</head>
+<body>
+  <div class="img-container">
+    <img src="tanmay.jpg" alt="Tanmay">
+  </div>
+
+  <h2>Happy Birthday Tanmay</h2>
+  <h3>From Sparsh</h3>
+
+  <button class="audio-button" onclick="document.getElementById('music').play()">Play Music 🎵</button>
+  <audio id="music" src="buddy.mp3" preload="auto"></audio>
+</body>
+</html>
